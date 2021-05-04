@@ -6,15 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends BaseModel
 {
-     public $table = 'user';
-    
+    public $table = 'user';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname','email'
+        'firstname', 'lastname', 'email', 'password'
     ];
 
     /**
