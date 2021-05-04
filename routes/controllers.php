@@ -4,6 +4,8 @@
 use Illuminate\Support\Facades\Route;
 
 $controllers = [
+  ['name' => 'user','except'=>[]],
+  ['name' => 'machine','except'=>[]],
   ['name' =>'test','except'=>['remove']],
   ['name' =>'location','except'=>[]]
 ];

@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends BaseModel
+class Machine extends BaseModel
 {
-     public $table = 'user';
+	 public $table = 'machine';
     
     /**
      * The attributes that are mass assignable.
@@ -14,7 +14,7 @@ class User extends BaseModel
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname','email'
+        'name', 'fon',
     ];
 
     /**
@@ -23,6 +23,8 @@ class User extends BaseModel
      * @var array
      */
     protected $hidden = [
-        'password'
+        
     ];
 }
+
+
