@@ -25,5 +25,7 @@ Route::group(['prefix' => 'api'], function () use ($controllers) {
     }
     Route::group(['prefix' => 'user'], function () {
         Route::post("authentification", "UserController@authentification");
+        Route::post("isEmpty","UserController@isEmpty");
     });
 });
+

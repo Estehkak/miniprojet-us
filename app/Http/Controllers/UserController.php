@@ -11,6 +11,18 @@ class UserController extends Controller
     const MODEL = User::class;
     use CrudActions;
 
+    public function isEmpty(Request $request){
+    $users = User::all();
+      if($users->isEmpty())
+      {
+          return response(true,200);
+         
+       }else{
+          return response(false,200);
+          
+       }
+    }
+
     public function authentification(Request $request){
         try{
            $email=$request->input('email');

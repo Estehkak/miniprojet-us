@@ -6,6 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends BaseModel
 {
+
+
+public static  function inCreating()
+  {
+    $data = Hash::check($request->input('password'));
+    return $data;
+    //return app('request')->all();
+  }
+
     public $table = 'user';
 
     /**
